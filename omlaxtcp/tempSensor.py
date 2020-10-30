@@ -65,9 +65,12 @@ def tempReading():
     global tdata
     time.sleep(1)
     (bytes_read, tdata_raw) = pi.i2c_read_device(handle, BUFFER_LENGTH)
+    # Reads raw data and number of bytes read
     a = 0
     b = len(tdata_raw)-2
     for i in range(2, b, 2):
+        # Converts raw data to detected individual temperature in degrees celsius.
+        # Starts at second byte as first byte is used for room temperature.
         tdata[a] = float((tdata_raw[i+1] << 8) | tdata_raw[i])/10
         a += 1
 
@@ -78,6 +81,8 @@ def roomtemp():
     """
     global roomtemp
     tPAT = float((tdata_raw[1] << 8) | tdata_raw[0])/10
+    # Converts raw data to room temperature in degrees celsius.
+    # First byte of raw data represents room temperature.
     roomtemp = tPAT
 
 
