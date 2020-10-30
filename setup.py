@@ -43,7 +43,7 @@ setup(
     include_package_data=True,
     keywords='omlaxtcp',
     name='omlaxtcp',
-    packages=find_packages(include=['omlaxtcp', 'omlaxtcp.*']),
+    packages=find_packages(include=['omlaxtcp']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
