@@ -16,7 +16,7 @@ OmlaxTCP
 
 
 
-This API provides functions for the configuration and operation of the Parallax 555-28027 PIR sensor and the Omron D6T-1A-02 temperature sensor. The data read from these modules may then be relayed via TCP protocols, from many clients to a single server, using a simplified rendition of the integrated Python Socket package.
+This Raspberry Pi-Python API provides functions for the configuration and operation of the Parallax 555-28027 PIR sensor and the Omron D6T-1A-02 temperature sensor. The data read from these modules may then be relayed via TCP protocols, from many clients to a single server, using a simplified rendition of the integrated Python Socket package.
 
 
 * Free software: MIT license
