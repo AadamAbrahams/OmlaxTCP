@@ -8,6 +8,8 @@ from click.testing import CliRunner
 
 from omlaxtcp import omlaxtcp
 from omlaxtcp import cli
+from omlaxTCP import motionSensor
+from omlaxTCP import tempSensor
 
 
 class TestOmlaxtcp(unittest.TestCase):
