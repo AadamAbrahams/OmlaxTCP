@@ -31,6 +31,22 @@ class TestOmlaxtcp(unittest.TestCase):
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
     
+    """
+    All the tests below require PIR motion sensor to be connected
+    
     def test_motionSensor_setup(self):
-        result = omlaxtcp.motionSensor.setup(1)
+        result = motionSensor.setup(1)
         assert result == None
+    
+    def test_motion_detect(self):
+        result = motionSensor.motion_detect(1)
+        assert result == None
+        
+    def test_direc_detect(self):
+        result = motionSensor.direc_detect(0, 1)
+        assert result == None
+        
+    def test_speed(self):
+        result = motionSensor.speed(5, 5)
+        assert result == None
+    """
