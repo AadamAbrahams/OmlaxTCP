@@ -32,5 +32,5 @@ class TestOmlaxtcp(unittest.TestCase):
         assert '--help  Show this message and exit.' in help_result.output
     
     def test_motionSensor_setup(self):
-        result = motionSensor.setup(1)
+        result = omlaxtcp.motionSensor.setup(1)
         assert result == None
