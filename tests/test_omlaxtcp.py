@@ -8,7 +8,7 @@ from click.testing import CliRunner
 
 from omlaxtcp import omlaxtcp
 from omlaxtcp import cli
-from omlaxtcp import motionSensor
+from omlaxtcp.omlaxtcp import motionSensor
 
 class TestOmlaxtcp(unittest.TestCase):
     """Tests for `omlaxtcp` package."""
