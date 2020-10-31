@@ -36,6 +36,13 @@ Features
 	* Direction detection through the use of two PIR motion sensors opposing one another, such that one is triggered prior to the other.
 	* Fever detection through the use of a single temperature sensor and a given maximum temperature boundary. (Can be used to determine if anything produces a temperature above a given maximum, not specifically human temperatures.)
 
+=====
+Usage
+=====
+
+To use OmlaxTCP in a project::
+
+    import omlaxtcp
 
 Credits
 -------
