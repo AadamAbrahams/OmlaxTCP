@@ -38,6 +38,8 @@ Features
     
 Hardware and Software Prerequisites
 -------
+A majority of the functions contained within this API may require a certain hardware module attached and/or a specific set of python libraries installed to operate as intended.
+
 
 Credits
 -------
