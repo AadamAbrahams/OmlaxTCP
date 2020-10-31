@@ -6,7 +6,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Creates socket object with arguments specifying address family & socket type.
 # AF_INET is the Internet address family for IPv4.
 # SOCK_STREAM is the socket type for TCP.
-hostIP, port = '10.0.0.15', '1234'
+hostIP, port = '10.0.0.15', 1234
 # Default HostIP and port for sending messages from client to server.
 
 
@@ -82,7 +82,7 @@ def setPort(P):
     If you are unsure, preferably use ports > 1023
 
     Parameters:
-    P(str): A port number
+    P(int): A port number
     """
     global port
     port = P
