@@ -2,6 +2,14 @@
 Usage
 =====
 
-To use OmlaxTCP in a project::
+To use motionSensor.py in a project::
 
-    import omlaxtcp
+    from omlaxtcp import motionSensor
+    
+To use tempSensor.py in a project::
+
+    from omlaxtcp import tempSensor
+
+To use TCP.py in a project::
+
+    from omlaxtcp import TCP
