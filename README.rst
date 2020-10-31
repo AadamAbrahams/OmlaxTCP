@@ -46,7 +46,9 @@ To make use of any of the functions contained in tempSensor.py_, a Omron D6T-1A-
 
     pip install pigpio smbus2 crcmod
 
+It is also required, on Linux-based machines, that when a program that makes use of these functions is executed for the first time, the following line is asserted in the command line::
 
+    sudo pigpiod
 
 .. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
 Credits
