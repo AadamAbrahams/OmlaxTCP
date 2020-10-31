@@ -42,7 +42,7 @@ A majority of the functions contained within this API may require a certain hard
 
 To make use of any of the functions contained in motionSensor.py_, a Parallax 555-28027 PIR motion sensor is required and may be connected to a GPIO pin of choice. However, it would be possible to use any PIR motion sensor that has a single output pin, and that outputs 1 when triggered and 0 while untriggered.   
 
-To make use of any of the functions contained in tempSensor.py_, a Omron D6T-1A-02 temperature sensor is required and must be connected to the relevant I2C specific pins to allow for complete communication. The python packages pigpio, smbus2 and crcmod.predefined are essential and needed to be installed as follows:
+To make use of any of the functions contained in tempSensor.py_, a Omron D6T-1A-02 temperature sensor is required and must be connected to the relevant I2C specific pins to allow for complete communication. The python packages pigpio, smbus2 and crcmod are essential and needed to be installed as follows:
 
 pigpio::
 
@@ -52,9 +52,9 @@ smbus2::
 
     pip install smbus2
     
-crcmod.predefined:
+crcmod:
 
-    pip install crcmod.predefined
+    pip install crcmod
 
 
 .. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
