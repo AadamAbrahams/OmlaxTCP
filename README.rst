@@ -22,9 +22,9 @@ This API provides functions for the configuration and operation of the Parallax 
 * Free software: MIT license
 * Documentation: https://omlaxtcp.readthedocs.io.
 
-
+=====
 Features
---------
+=====
 
 **Basic configuration and operation of:**
     * The Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for triggered and 0 for untriggered)
@@ -44,8 +44,9 @@ To use OmlaxTCP in a project::
 
     import omlaxtcp
 
+=====
 Credits
--------
+=====
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
