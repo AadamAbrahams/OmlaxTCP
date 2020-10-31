@@ -27,7 +27,7 @@ Features
 -------
 
 **Basic configuration and operation of:**
-    * The Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for triggered and 0 for untriggered)
+    * The Parallax 555-28027 PIR motion sensor.
     * The Omron D6T-1A-02 temperature sensor using I2C communication protocols.
     * TCP network protocols using a simplified rendition of the integrated Python Socket package.
 	
@@ -40,7 +40,7 @@ Hardware and Software Prerequisites
 -------
 A majority of the functions contained within this API may require a certain hardware module attached and/or a specific set of python libraries installed to operate as intended.
 
-To make use of any of the functions contained in the motionSensor.py_ file, a Parallax 555-28027 PIR motion sensor is required. However, it would be possible to use any PIR motion sensor, with a single output pin, that outputs 1 when triggered and 0 while untriggered.   
+To make use of any of the functions contained in the motionSensor.py_ file, a Parallax 555-28027 PIR motion sensor is required. However, it would be possible to use any PIR motion sensor that has a single output pin, and that outputs 1 when triggered and 0 while untriggered.   
 
 .. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
 Credits
