@@ -31,7 +31,7 @@ Features
     * The Omron D6T-1A-02 temperature sensor using I2C communication protocols.
     * TCP network protocols using a simplified rendition of the integrated Python Socket package.
 	
-* **Additional functionality include:**
+* ***Additional functionality include:***
 
 Credits
 -------
