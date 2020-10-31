@@ -54,6 +54,7 @@ The functions defined in TCP.py_ do not require any additional hardware modules,
 
 .. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
 .. _tempSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/tempSensor.py
+.. _TCP.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/TCP.py
 Credits
 -------
 
