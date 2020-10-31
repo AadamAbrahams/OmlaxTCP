@@ -1,2 +1,2 @@
-.. automodule:: omlaxtcp.motionSensor
+.. automodule:: motionSensor
     :members:
