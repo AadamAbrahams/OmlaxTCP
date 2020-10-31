@@ -50,3 +50,22 @@ class TestOmlaxtcp(unittest.TestCase):
         result = motionSensor.speed(5, 5)
         assert result == None
     """
+    """
+    All tests below require both a server and client to communicate between one another
+    
+    def test_client(self):
+        result = TCP.client("test")
+        assert result == None
+    
+    def test_server_setup(self):
+        result = TCP.server_setup(1)
+        assert result == None
+        
+    def test_setHostIP(self):
+        TCP.setHostIP("1")
+        assert TCP.hostIP == "1"
+        
+    def test_setPort(self):
+        TCP.setPort(12345)
+        assert TCP.port == 12345
+    """
