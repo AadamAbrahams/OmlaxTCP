@@ -25,6 +25,7 @@ This API provides functions for the configuration and operation of the Parallax 
 
 Features
 --------
+
 Basic configuration and operation of:
     * The Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for high and 0 for low)
     * The Omron D6T-1A-02 temperature sensor using I2C communication protocols.
