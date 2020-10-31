@@ -53,6 +53,13 @@ It is also required, on Linux-based machines, that when a program that makes use
 
 The functions defined in TCP.py_ do not require any additional hardware modules, it merely requires that the device implementing the subpackage be connected to a router. Such that, at a minimum, devices may communicate over the Local Area Network. If the user wishes to exchange data between devices over the internet, the device acting as the server is required to have its router port forwarding, on the relevant socket port, to the device in question.
 
+Sample Usage
+------------
+Illustrated, below is a sample usage of motionSensor.py, which can be applied to any of the files contained within the OmlaxTCP API package::
+    from omlaxtcp import motionSensor
+    
+    motionSensor.setup(1)
+    motionSensor.direc_detect_with_BuzzandTemp(0, 1)
 
 Credits
 -------
