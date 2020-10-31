@@ -22,9 +22,9 @@ This API provides functions for the configuration and operation of the Parallax 
 * Free software: MIT license
 * Documentation: https://omlaxtcp.readthedocs.io.
 
-=====
+
 Features
-=====
+-------
 
 **Basic configuration and operation of:**
     * The Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for triggered and 0 for untriggered)
@@ -36,6 +36,14 @@ Features
 	* Direction detection through the use of two PIR motion sensors opposing one another, such that one is triggered prior to the other.
 	* Fever detection through the use of a single temperature sensor and a given maximum temperature boundary. (Can be used to determine if anything produces a temperature above a given maximum, not specifically human temperatures.)
 
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
 =====
 Usage
 =====
@@ -44,11 +52,4 @@ To use OmlaxTCP in a project::
 
     import omlaxtcp
 
-=====
-Credits
-=====
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
