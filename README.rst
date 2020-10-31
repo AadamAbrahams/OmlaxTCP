@@ -24,7 +24,7 @@ This Raspberry Pi-Python API provides functions for the configuration and operat
 
 
 Features
--------
+--------
 
 **Basic configuration and operation of:**
     * The Parallax 555-28027 PIR motion sensor.
@@ -37,7 +37,7 @@ Features
 	* Fever detection through the use of a single temperature sensor and a given maximum temperature boundary. (Can be used to determine if anything produces a temperature above a given maximum, not specifically human temperatures.)
     
 Hardware and Software Prerequisites
--------
+-----------------------------------
 A majority of the functions contained within this API may require a certain hardware module attached and/or a specific set of python libraries installed to operate as intended. However, in all instances that a hardware module is required, a Raspberry Pi (Any version) is necessary. 
 
 To make use of any of the functions contained in motionSensor.py_, a Parallax 555-28027 PIR motion sensor is required and may be connected to a GPIO pin of choice. However, it would be possible to use any PIR motion sensor that has a single output pin, and that outputs 1 when triggered and 0 while untriggered.  
