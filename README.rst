@@ -55,7 +55,7 @@ The functions defined in TCP.py_ do not require any additional hardware modules,
 
 Sample Usage
 ------------
-Illustrated, below is a sample usage of motionSensor.py, which can be applied to any of the files contained within the OmlaxTCP API package::
+Illustrated below, is a sample usage of motionSensor.py, which can be applied to any of the files contained within the OmlaxTCP API package::
     
     from omlaxtcp import motionSensor
     
