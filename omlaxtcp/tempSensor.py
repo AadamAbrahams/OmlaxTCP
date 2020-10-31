@@ -35,7 +35,7 @@ def setup(channel, omAddress, arraysize):
     tdata = [0.0]*arraysize
 
 
-def feverScanner():
+def feverScanner(maxtemp):
     """
     Determines if an individual is standing infront of the temperature sensor,
     waits a full second and reads the temperature value again to gain a more
@@ -53,7 +53,7 @@ def feverScanner():
             init = False
             scanned = True
             TCP.client(str(tdata[0]))
-            if (tdata[0]) > 38:
+            if (tdata[0]) > maxtemp:
                 scanned = False
                 time.sleep(1)
 
