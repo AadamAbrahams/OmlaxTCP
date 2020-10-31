@@ -64,6 +64,7 @@ def direc_detect_with_BuzzandTemp(motion_out, motion_in):
     """
     Determines the direction in which an individual is travelling,
     by assessing the sequence of triggers between two motion sensors.
+    Includes buzzer and temperature sensor operation. 
 
     Parameters:
     motion_out(int): Outside motion sensor pin
