@@ -26,7 +26,7 @@ This API provides functions for the configuration and operation of the Parallax 
 Features
 --------
 
-* TODO
+* Basic configuration and operation of the Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor with a single output pin that reads a 1 for high and 0 for low)
 
 Credits
 -------
