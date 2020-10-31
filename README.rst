@@ -25,10 +25,10 @@ This API provides functions for the configuration and operation of the Parallax 
 
 Features
 --------
-
-* Basic configuration and operation of the Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for high and 0 for low)
-* Basic configuration and operation of the Omron D6T-1A-02 temperature sensor using I2C communication protocols.
-* Basic configuration and operation of TCP network protocols using the integrated Python Socket package.
+Basic configuration and operation of:
+    * The Parallax 555-28027 PIR motion sensor (and potentially any PIR motion sensor, with a single output pin, that reads 1 for high and 0 for low)
+    * The Omron D6T-1A-02 temperature sensor using I2C communication protocols.
+    * TCP network protocols using a simplified rendition of the integrated Python Socket package.
 
 Credits
 -------
