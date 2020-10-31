@@ -51,6 +51,7 @@ It is also required, on Linux-based machines, that when a program that makes use
     sudo pigpiod
 
 .. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
+.. _tempSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/tempSensor.py
 Credits
 -------
 
