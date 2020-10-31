@@ -38,7 +38,7 @@ Features
     
 Hardware and Software Prerequisites
 -------
-A majority of the functions contained within this API may require a certain hardware module attached and/or a specific set of python libraries installed to operate as intended.
+A majority of the functions contained within this API may require a certain hardware module attached and/or a specific set of python libraries installed to operate as intended. However, in all instances that a hardware module is required, a Raspberry Pi (Any version) is necessary. 
 
 To make use of any of the functions contained in the motionSensor.py_ file, a Parallax 555-28027 PIR motion sensor is required. However, it would be possible to use any PIR motion sensor that has a single output pin, and that outputs 1 when triggered and 0 while untriggered.   
 
