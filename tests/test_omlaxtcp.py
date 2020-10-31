@@ -62,8 +62,8 @@ class TestOmlaxtcp(unittest.TestCase):
         assert result == None
         
     def test_setHostIP(self):
-        TCP.setHostIP("1")
-        assert TCP.hostIP == "1"
+        TCP.setHostIP("10.0.0.16")
+        assert TCP.hostIP == "10.0.0.16"
         
     def test_setPort(self):
         TCP.setPort(12345)
