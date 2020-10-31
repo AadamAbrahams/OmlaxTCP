@@ -53,9 +53,7 @@ It is also required, on Linux-based machines, that when a program that makes use
 
 The functions defined in TCP.py_ do not require any additional hardware modules, it merely requires that the device implementing the subpackage be connected to a router. Such that, at a minimum, devices may communicate over the Local Area Network. If the user wishes to exchange data between devices over the internet, the device acting as the server is required to have its router port forwarding, on the relevant socket port, to the device in question.
 
-.. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
-.. _tempSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/tempSensor.py
-.. _TCP.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/TCP.py
+
 Credits
 -------
 
@@ -63,4 +61,7 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _motionSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/motionSensor.py
+.. _tempSensor.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/tempSensor.py
+.. _TCP.py: https://github.com/AadamAbrahams/OmlaxTCP/blob/master/omlaxtcp/TCP.py
 
