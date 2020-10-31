@@ -60,7 +60,30 @@ def direc_detect(motion_out, motion_in):
         ensure_low(motion_out, motion_in)
         # Ensure that both motion sensors are low/are not triggered.
 
+def direc_detect_with_BuzzandTemp(motion_out, motion_in):
+    """
+    Determines the direction in which an individual is travelling,
+    by assessing the sequence of triggers between two motion sensors.
+    Includes buzzer and temperature sensor operation. 
 
+    Parameters:
+    motion_out(int): Outside motion sensor pin
+    motion_in(int): Inside motion sensor pin
+    """
+    if (GPIO.input(motion_out) == 1):
+        # Determines if outside motion sensor is triggered first.
+        init_trig_with_BuzzandTemp(motion_in)
+        # Wait atleast 4 seconds for the corresponding sensor to trigger.
+        ensure_low(motion_out, motion_in)
+        # Ensure that both motion sensors are low/are not triggered.
+
+    if (GPIO.input(motion_in) == 1):
+        # Determines if inside motion sensor is triggered first.
+        init_trig(motion_out)
+        # Wait atleast 4 seconds for the corresponding sensor to trigger.
+        ensure_low_with_BuzzandTemp(motion_out, motion_in)
+        # Ensure that both motion sensors are low/are not triggered.
+        
 def speed_detect(motion_first, motion_second, distance):
     """
     Determines the direction in which an individual is travelling,
@@ -85,7 +108,7 @@ def speed_detect(motion_first, motion_second, distance):
         # Ensure that both motion sensors are low/are not triggered.
 
 
-def init_trig(motion):
+def init_trig_with_BuzzandTemp(motion):
     """
     Waits up to 4 seconds until corresponding sensor is triggered.
     If sensor triggered and temperature sensor not been triggered prior,
@@ -119,6 +142,20 @@ def init_trig(motion):
                 tempSensor.scanned = False
                 break
 
+def init_trig(motion):
+    """
+    Waits up to 4 seconds until corresponding sensor is triggered.
+    motion(int): Second motion sensor pin
+    """
+    for x in range(40):
+        # Loop for 40 iterations.
+        time.sleep(0.1)
+        # Delay for 10ms.
+        if (GPIO.input(motion) == 1):
+            # Determines if corresponding motion sensor is triggered.
+                TCP.client(str(motion))
+                # Sends direction of motion as message to the connected server.
+                break
 
 def timing(motion):
     """
